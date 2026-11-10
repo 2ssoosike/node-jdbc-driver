@@ -31,7 +31,11 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "jdbc": "^0.7.6"
+    "jdbc": "^0.7.6",
+    "java": "^0.15.0"
+  },
+  "overrides": {
+    "nan": "^2.22.0"
   },
   "repository": {
     "type": "git",
