@@ -147,7 +147,11 @@ export default class JdbcDriver<T extends ConnectionType> extends Drivers<T> imp
         return new Promise(async (resolve, reject) => {
             const connection = JdbcDriver.connection.get(this.type)
             if (this.is_init(connection)) {
-                resolve(connection._reserved[0])
+                // resolve(connection._reserved[0])
+                connection.reserve((err: any, connObj: any) => {
+                  if (err) { reject(err); }
+                  else { resolve(connObj); }
+                })
             } else {
                 if (!connection._pool.length) {
                     await this.init(connection)
