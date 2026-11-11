@@ -191,9 +191,9 @@ node.js v22.23.4 에 맞춰서 npm run build 하려면 node.js v22.23.4 / java v
 
 ### node.js v22.23.4 에 맞춰 빌드하기 위한 환경 구성 후 추가 작업
 - java 패키지 업그레이드
- - "java": "^0.12.1" -> "java": "^0.15.0"
+  - "java": "^0.12.1" -> "java": "^0.15.0"
 - 데이터 타입 호환성을 위해 nan 패키지 추가
- - "nan": "^2.22.0"
+  - "nan": "^2.22.0"
 - jdbc 패키지 코드 수정
- - jdbc\node_modules\java\src\javaObject.cpp, NAN_GETTER 함수 안에서 정수형 객체로 명시적 래핑(245 라인)
- - jdbc\node_modules\java\src\utils.cpp, case TYPE_INT 일 때 return 부분 정수형 객체로 명시적 래핑(731 라인)
+  - jdbc\node_modules\java\src\javaObject.cpp, NAN_GETTER 함수 안에서 정수형 객체로 명시적 래핑(245 라인)
+  - jdbc\node_modules\java\src\utils.cpp, case TYPE_INT 일 때 return 부분 정수형 객체로 명시적 래핑(731 라인)
