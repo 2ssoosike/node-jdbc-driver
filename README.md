@@ -183,9 +183,8 @@ const tblProperties = await jdbc.get_table_properties('<table_name>');
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Build
-npm run build 하려면 node.js v22.23.4 / java v1.8.0_332 / visual studio 2019 필요
-현재 푸시된 빌드 환경은 아래 것들 받아서 윈도우 환경에서 빌드
+node.js v22.23.4 에 맞춰서 npm run build 하려면 node.js v22.23.4 / java v1.8.0_332 / visual studio 2019 필요. 현재 푸시된 빌드 환경은 아래 것들 받아서 윈도우 환경에서 빌드함.
 
-https://nodejs.org/dist/v22.23.4/node-v22.23.4-win-x64.zip
-https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-1.8.0.332-1.b09/java-1.8.0-openjdk-1.8.0.332-1.b09.ojdkbuild.windows.x86_64.zip
-https://aka.ms/vs/16/release/vs_community.exe
+- https://nodejs.org/dist/v22.23.4/node-v22.23.4-win-x64.zip
+- https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-1.8.0.332-1.b09/java-1.8.0-openjdk-1.8.0.332-1.b09.ojdkbuild.windows.x86_64.zip
+- https://aka.ms/vs/16/release/vs_community.exe
